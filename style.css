@@ -1,0 +1,217 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff3f3;
+    color: #4d4d4d;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Header section styling */
+header {
+    background-color: #e91e63;
+    color: white;
+    padding: 4rem;
+    text-align: center;
+    border-bottom: 6px solid #c2185b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    animation: slideIn 1s ease-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    animation: fadeInUp 2s ease-out;
+}
+
+/* Profile image styling */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: 20px auto;
+    animation: slideInLeft 2s ease-out;
+}
+
+/* Main content wrapper */
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin-top: 2rem;
+}
+
+/* Section styling */
+section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 2s ease-out;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h2 {
+    color: #e91e63;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Project item layout */
+.project-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.projects li {
+    background-color: #f8bbd0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.projects li:hover {
+    background-color: #f48fb1;
+    transform: scale(1.02);
+}
+
+.projects strong {
+    color: #1976d2;
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Certifications section styling */
+.certifications {
+    background: #fce4ec;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f8bbd0;
+    margin-top: 2rem;
+    font-size: 1rem;
+    border-top: 6px solid #c2185b;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Anchor tag styling */
+a {
+    color: #c2185b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hover Effects */
+a:hover {
+    text-decoration: underline;
+    color: #e91e63;
+}
+
+section:hover {
+    background: #f8bbd0;
+    transform: scale(1.02);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
